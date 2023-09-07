@@ -62,10 +62,12 @@ class Program
 
             DateTime t = DateTime.Now;
 
+            DateTimeOffset tl = DateTime.UtcNow;
+
             //t = t.Substring(0, t.Length - 2);
             //t =  cast  t.Substring(0, t.Length - 2);
 
-            string newRow = "\"" + Environment.UserName + ",\"\"" + a + "\"\"," + t.ToString() + "\"";
+            string newRow = "\"" + Environment.UserName + ",\"\"" + a + "\"\"," + tl.ToUnixTimeSeconds() + "\"";
             string printRow = Environment.UserName + ", " + t.ToString() + ", " + a;
 
             Console.WriteLine(printRow);
