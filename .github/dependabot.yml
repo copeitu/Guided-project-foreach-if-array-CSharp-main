@@ -1,0 +1,9 @@
+
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 25
+- package-ecosystem: nuget
+  directory: "/src/Chirp.CLI/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 25
